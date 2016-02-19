@@ -67,7 +67,7 @@ class TagCommand extends Command
                 $subGit->checkout('master');
                 $subGit->merge($branch, 'Auto merge PHP', ['no-ff' => true]);
                 $subGit->tag->create($tag);
-                // $subGit->push('origin', 'master', array('tags' => true));
+                $subGit->push('origin', 'master', array('tags' => true));
             }
         }
 
@@ -77,7 +77,7 @@ class TagCommand extends Command
         $git->checkout("master");
         $git->merge($branch, 'Auto merge PHP', ['no-ff' => true]);
         $git->tag->create($tag);
-        // $git->push('origin', 'master', array('tags' => true));
+        $git->push('origin', 'master', array('tags' => true));
     }
 
     protected function title(OutputInterface $output, $text)

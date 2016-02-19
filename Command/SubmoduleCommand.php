@@ -3,6 +3,7 @@
 namespace CanalTP\PHPGit\Command;
 
 use PHPGit\Command;
+use CanalTP\PHPGit\Git;
 
 /**
  * Submodule command tagger
