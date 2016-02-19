@@ -1,0 +1,29 @@
+{
+    "name": "canaltp/nmp-tag",
+    "description": "A Git wrapper for PHP5.3+",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Johan Rouve",
+            "email": "johan.rouve@canaltp.fr"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/process": ">=2.3",
+        "symfony/finder": ">=2.3",
+        "symfony/options-resolver": ">=2.3",
+        "phpunit/phpunit": "^4.7",
+        "kzykhys/git": "~1.0@dev",
+        "symfony/console": ">=2.3"
+    },
+    "require-dev": {
+        "symfony/filesystem": ">=2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "CanalTP\\PHPGit\\": ""
+        }
+    }
+}
